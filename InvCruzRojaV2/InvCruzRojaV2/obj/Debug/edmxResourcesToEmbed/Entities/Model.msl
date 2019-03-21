@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CruzRojaInventarios_V2ModelStoreContainer" CdmEntityContainer="CruzRojaInventarios_V2Entities">
+    <EntitySetMapping Name="EMPLEADOS">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADOS">
+          <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+          <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTARIOs">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.INVENTARIO">
+        <MappingFragment StoreEntitySet="INVENTARIO">
+          <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+          <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+          <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+          <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAS">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.PERSONA">
+        <MappingFragment StoreEntitySet="PERSONAS">
+          <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TERRITORIOS">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.TERRITORIO">
+        <MappingFragment StoreEntitySet="TERRITORIOS">
+          <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+          <ScalarProperty Name="Comite" ColumnName="Comite" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="database_firewall_rules">
+      <EntityTypeMapping TypeName="CruzRojaInventarios_V2Model.database_firewall_rules">
+        <MappingFragment StoreEntitySet="database_firewall_rules">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_ip_address" ColumnName="start_ip_address" />
+          <ScalarProperty Name="end_ip_address" ColumnName="end_ip_address" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CruzRojaInventarios_V2Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CruzRojaInventarios_V2Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CruzRojaInventarios_V2Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CruzRojaInventarios_V2Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CruzRojaInventarios_V2Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CruzRojaInventarios_V2Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_ReporteActivos" FunctionName="CruzRojaInventarios_V2Model.Store.sp_ReporteActivos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_ReporteActivos_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Comite" ColumnName="Comite" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+          <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorEmpleados" FunctionName="CruzRojaInventarios_V2Model.Store.sp_ReporteActivosPorEmpleados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_ReporteActivosPorEmpleados_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+          <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorTerritorios" FunctionName="CruzRojaInventarios_V2Model.Store.sp_ReporteActivosPorTerritorios">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_ReporteActivosPorTerritorios_Result">
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Comite" ColumnName="Comite" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+          <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ReporteEmpleados" FunctionName="CruzRojaInventarios_V2Model.Store.sp_ReporteEmpleados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CruzRojaInventarios_V2Model.sp_ReporteEmpleados_Result">
+          <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Comite" ColumnName="Comite" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CruzRojaInventarios_V2Model.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

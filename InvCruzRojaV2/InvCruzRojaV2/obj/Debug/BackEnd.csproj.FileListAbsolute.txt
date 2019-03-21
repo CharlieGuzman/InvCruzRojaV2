@@ -1,0 +1,12 @@
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\InvCruzRojaV2.dll.config
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\InvCruzRojaV2.dll
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\InvCruzRojaV2.pdb
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\EntityFramework.dll
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\System.Data.SqlClient.dll
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\EntityFramework.xml
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\obj\Debug\InvCruzRojaV2.dll
+C:\Users\CharlieGB\Desktop\BackEnd\InvCruzRojaV2\obj\Debug\InvCruzRojaV2.pdb

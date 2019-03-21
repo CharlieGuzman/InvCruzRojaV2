@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="73267d7a1c884255a26bd0a1d2ef15c5" Name="Diagram1">
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.EMPLEADO" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.INVENTARIO" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.PERSONA" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.TERRITORIO" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventarios_V2Model.database_firewall_rules" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CruzRojaInventarios_V2Model.FK_EMPLEADOS_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventarios_V2Model.FK_INVENTARIO_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventarios_V2Model.FK_INVENTARIO_TERRITORIOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventarios_V2Model.FK_PERSONAS_TERRITORIOS" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
